@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocRoot>
+    <scriptVersion Version="hello-world" />
+    <Hardware_Info>
+        <Computer Name="xxx004" UserName="USER" ServiceTag="SXXX" />
+        <OperatingSystem Name="Microsoft Windows 11 Pro" Version="10.0.26100" />
+    </Hardware_Info>
+    <Software_Info>
+        <InstalledProgramsList>
+            <Software_1 Name="7-Zip 19.00 (x64)" />
+        </InstalledProgramsList>
+        <MicrosoftOfficeKeys></MicrosoftOfficeKeys>
+        <WindowsKey ProductID="xxxxx-xxxxx-xxxxx-xxxxx" ProductKey="xxxxx-xxxxx-xxxxx-xxxxx-xxxxx" />
+        <OracleInfo></OracleInfo>
+    </Software_Info>
+    <AgentTaskInfo>
+        <AgentTaskInfo AgentTaskID="NO_AGENT_TASK_ID" ComputerName="xxx004"
+            ServiceTag="xxx01xxx" MacAddress="xx:C5:xx:D2:xx:95###"
+            LastScanTime="27/03/2025 13:58:27" isAgentRunning="False" />
+    </AgentTaskInfo>
+</DocRoot>
