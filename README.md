@@ -12,6 +12,10 @@ source .venv/bin/activate
 
 install dependencies
 ```
+make install
+```
+or
+```
 pip3 install -r requirements.txt
 ```
 

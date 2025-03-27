@@ -1,20 +1,10 @@
 .PHONY: build build-windows
 
+install:
+	pip3 install panda openpyxl lxml tk ttkthemes pyinstaller
+
 build:
-	pyinstaller --name="SCGH XML Converter" \
-		--windowed \
-		--onefile \
-		--exclude-module matplotlib \
-		--exclude-module scipy \
-		--exclude-module PIL \
-		--exclude-module notebook \
-		--exclude-module IPython \
-		--exclude-module pytest \
-		--exclude-module numpy.random.tests \
-		--exclude-module numpy.core.tests \
-		--exclude-module pandas.tests \
-		--noupx \
-		app.py
+	pyinstaller --name="SCGH XML Converter" --windowed --onefile --noupx app.py
 
 build-windows:
-	docker run --rm -v "$(PWD):/src" cdrx/pyinstaller-windows:python3 "pip install -r requirements.txt && pyinstaller --name='SCGH XML Converter' --windowed --onefile --exclude-module matplotlib --exclude-module scipy --exclude-module PIL --exclude-module notebook --exclude-module IPython --exclude-module pytest --exclude-module numpy.random.tests --exclude-module numpy.core.tests --exclude-module pandas.tests --noupx app.py"
+	docker run --rm -v "$(PWD):/src" cdrx/pyinstaller-windows:python3 "pip install -r requirements.txt && pyinstaller --name='SCGH XML Converter' --windowed --onefile --noupx app.py"

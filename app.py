@@ -1,7 +1,6 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
 import os
-import glob
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 from typing import List
